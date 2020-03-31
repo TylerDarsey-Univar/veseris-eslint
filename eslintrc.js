@@ -12,25 +12,20 @@ module.exports = {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "eslint-plugin-html",
-    ],
+
     "rules": {
 
         "max-len": [
             "warn",
             {
-                "code": 80,
+                "code": 120,
                 "tabWidth": 4,
-                "ignoreUrls": true
+                "ignoreStrings": true
             }
-        ],
-        "semi": [
-            "error"
         ],
         "id-length": [
             "error",
-            { 
+            {
                 "min": 2,
                 "exceptions": ["$", "i"]
             }
@@ -52,7 +47,7 @@ module.exports = {
         "comma-spacing": ["warn"],
         "computed-property-spacing": ["warn"],
         "func-call-spacing": ["warn"],
-        "key-spacing": ["warn"],
+
         "no-trailing-spaces": ["warn"],
         "space-before-blocks": [
             "error",
@@ -74,7 +69,8 @@ module.exports = {
         ],
         "quotes": [
             "warn",
-            "double"
+            "double",
+            "avoid-escape"
         ],
         "semi": [
             "error",
@@ -83,17 +79,16 @@ module.exports = {
 
         "function-paren-newline": [
             "error",
-            "multiline"
+            "multiline-arguments"
         ],
         "eqeqeq": [
             "warn"
         ],
-        
+
         "comma-style": ["warn"],
         "comma-dangle": ["warn"],
 
         "no-array-constructor": ["warn"],
-        //"func-style": ["warn"],
         "no-loop-func": ["warn"],
         "no-new-func": ["warn"],
         "no-param-reassign": ["warn"],
