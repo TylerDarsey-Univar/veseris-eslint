@@ -37,7 +37,6 @@ module.exports = {
             "error",
             "windows"
         ],
-
         "indent": [
             "error",
             4
@@ -84,6 +83,10 @@ module.exports = {
         "eqeqeq": [
             "warn"
         ],
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never"
+        }],
 
         "comma-style": ["warn"],
         "comma-dangle": ["warn"],
@@ -108,7 +111,7 @@ module.exports = {
         "spaced-comment": ["warn"],
         "newline-per-chained-call": [
             "warn", {
-                "ignoreChainWithDepth": 3
+                "ignoreChainWithDepth": 5
             }
         ],
         "no-whitespace-before-property": ["warn"],
